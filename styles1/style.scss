@@ -1,24 +1,9 @@
-// @import './header';
 @import './variables';
+@import './header';
 
-// $primaryBtn: #faec6f;
-// $primaryBtnAfter: #ff6d6d;
-// $textColor: black;
 
-header {
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    color: $textColor;
-        button {
-            background-color: $primaryBtn;
-            &:hover {
-                background-color: $primaryBtnAfter;
-            }
-        }
-}
-
-.contact button {
+.contact {
+    @include flexCenter(row, pink);
     background-color: $primaryBtn;
     &:hover {
         background-color: $primaryBtnAfter;
@@ -26,5 +11,5 @@ header {
 }
 
 
-//https://www.youtube.com/watch?v=Zz6eOVaaelI 10:44
+//https://www.youtube.com/watch?v=Zz6eOVaaelI 12:13
 // having issues connecting the variables page using import.

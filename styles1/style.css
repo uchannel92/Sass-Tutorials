@@ -1,27 +1,49 @@
 header {
-  background-color: orange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: limegreen;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-color: red;
+  height: 500px;
+  color: black;
 }
 
 header button {
-  background-color: #fd91e2;
+  background-color: #faec6f;
 }
 
 header button:hover {
-  background-color: #f52929;
+  background-color: #ff6d6d;
 }
 
-.contact button {
-  background-color: #fd91e2;
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: pink;
+  background-color: #faec6f;
 }
 
-.contact button:hover {
-  background-color: #f52929;
+.contact:hover {
+  background-color: #ff6d6d;
 }
 /*# sourceMappingURL=style.css.map */
