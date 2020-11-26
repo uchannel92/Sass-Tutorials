@@ -1,0 +1,21 @@
+footer {
+    margin-top: 10px;
+}
+
+.container {
+
+    margin: 0 auto;
+    background: lightblue;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    .row {
+       background: chartreuse;
+       margin: 5px 5px;
+       padding: 10px 20px;
+
+       @include flexCenter(row-reverse, red);
+
+    }
+
+}

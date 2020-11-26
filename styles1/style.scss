@@ -1,0 +1,30 @@
+// @import './header';
+@import './variables';
+
+// $primaryBtn: #faec6f;
+// $primaryBtnAfter: #ff6d6d;
+// $textColor: black;
+
+header {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+        button {
+            background-color: $primaryBtn;
+            &:hover {
+                background-color: $primaryBtnAfter;
+            }
+        }
+}
+
+.contact button {
+    background-color: $primaryBtn;
+    &:hover {
+        background-color: $primaryBtnAfter;
+    }
+}
+
+
+//https://www.youtube.com/watch?v=Zz6eOVaaelI 10:44
+// having issues connecting the variables page using import.

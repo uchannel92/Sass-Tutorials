@@ -1,0 +1,27 @@
+header {
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: limegreen;
+}
+
+header button {
+  background-color: #fd91e2;
+}
+
+header button:hover {
+  background-color: #f52929;
+}
+
+.contact button {
+  background-color: #fd91e2;
+}
+
+.contact button:hover {
+  background-color: #f52929;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,95 @@
+@import "./variables";
+@import "./footer";
+
+// when importing new style sheets, ensure you import the name of the stylesheet you want to import with "<<_filname>>"
+// don't forget to write @import "./fileName"; <--- do not forget colon.
+// create a new sheet in the same folder for area you want i.e. if you are creating a header
+// sheet name will be called _header, then in the main stylesheet @import "./header;"
+
+// You can also import variables. Same way with sections of css
+// copy the variables to a new sheet name _<varialblesfilename.css>
+// In the main stylesheet create another @import"./variablesname"
+
+// @mixin flexCenter($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+// add a variable in the @mixin parenthesis if you want to do additional styling
+// for example the flex-direction property - the $direction variable will be the property valye aka 100px;/column etc.
+// Then where you've added @include - the name parentheses(<Add variable here i.e. $direction>) you can then add the property of what you want so flex-direction - row / row-reverse etc.
+
+// What have i learnt? make sure Sass is always "Watching.."
+//for mixins it seems mixin has to be at the top first before the section you are trying to implement stuff.
+// @mixin has to come first before the @include
+
+$h1color: lightblue;
+
+header {
+    background-color: orange;
+    height: 500px;
+    button {
+        background: $primaryBtn;
+        &:hover {
+            background: $primaryBtnHvr;
+        }
+    }
+
+    @include flexCenter(column-reverse);
+}
+
+
+// Nesting a button in the header, but within the button i have
+// nested the hover for the button
+
+.contact button {
+    background: $primaryBtn;
+}
+
+.contact button:hover {
+    background: $primaryBtnHvr;
+}
+
+h1 {
+    color: $h1color;
+}
+
+span {
+    background: $spanbg;
+    border: 2px solid darkgrey;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span p {
+    color: $ptags;
+}
+
+.membership {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 1000px;
+    // width: 1000px;
+    background-color: $membership;
+
+}
+
+
+// Ensure you switch on the Watch Sass button on the bottom of VSC to get things running! also download the extension (find out if there is a Sublime version)
+// You can nest groups
+// You can set variables by using $ then giving a name and colour.
+// Then you set the variable name on the selector as shown in .contact button
+// Nesting within a semantic tag to organise our code!
+
+
+// Time in Video 13:04 - https://www.youtube.com/watch?v=Zz6eOVaaelI

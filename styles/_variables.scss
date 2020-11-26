@@ -1,0 +1,15 @@
+$primaryBtn: lightblue;
+$primaryBtnHvr: limegreen;
+
+$ptags: red;
+$spanbg: lightgrey;
+$membership: black;
+$h4color: lightblue;
+
+@mixin flexCenter($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
